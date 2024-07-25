@@ -1,0 +1,15 @@
+body {
+    margin: 0;
+    
+  }
+  
+  :root {
+    /* fonts */
+    --font-inter: Inter;
+  
+  
+    /* Paddings */
+    --padding-sm: 14px;
+    --padding-2xl: 21px;
+    --padding-4xs: 9px;
+  }
