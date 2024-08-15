@@ -1,15 +1,19 @@
 body {
-    margin: 0;
-    
-  }
-  
-  :root {
-    /* fonts */
-    --font-inter: Inter;
-  
-  
-    /* Paddings */
-    --padding-sm: 14px;
-    --padding-2xl: 21px;
-    --padding-4xs: 9px;
-  }
+  margin: 0;
+  line-height: normal;
+}
+
+:root {
+  /* fonts */
+  --font-inter: Inter;
+
+  /* font sizes */
+  --font-size-lg: 18px;
+
+  /* Colors */
+  --color-white: #fff;
+  --color-gray: rgba(255, 255, 255, 0.76);
+
+  /* Paddings */
+  --padding-7xs: 6px;
+}
