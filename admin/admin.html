@@ -6,6 +6,7 @@
 
     <link rel="stylesheet" href="./globaladmin.css" />
     <link rel="stylesheet" href="./admin.css" />
+    <link rel="stylesheet" href="./admin.js" />
     <link
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,800;1,500&display=swap"
@@ -19,7 +20,7 @@
             class="avatar-1-icon"
             loading="lazy"
             alt=""
-            src="C:\Users\Admin\Downloads\1\picture\avatar.jpg"
+            src="\picture\avatar.jpg"
           />
 
           <div class="sidebar-items">
@@ -29,6 +30,7 @@
         <div class="navbar">
           <div class="title-wrapper">
             <i class="qun-l-danh">Quản lí danh mục </i>
+            <button id="category-button"></button> 
           </div>
           <i class="qun-l-sn">Quản lí sản phẩm </i>
           <div class="navigation">
@@ -47,9 +49,18 @@
           class="fahasa-logo-1-icon"
           loading="lazy"
           alt=""
-          src="C:\Users\Admin\Downloads\1\picture\fahasa-logo.webp"
+          src="\picture\fahasa-logo.webp"
         />
       </header>
     </div>
+    <script>
+      document.addEventListener('DOMContentLoaded', (event) => {
+          const categoryButton = document.getElementById('category-button');
+          categoryButton.addEventListener('click', (event) => {
+              // Chuyển hướng đến trang quản lý danh mục (thay thế 'category-management.html' bằng đường dẫn thực tế)
+              window.location.href = ''; 
+          });
+      });
+      </script>
   </body>
 </html>

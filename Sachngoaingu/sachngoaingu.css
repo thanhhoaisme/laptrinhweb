@@ -905,3 +905,54 @@
     gap: var(--gap-base);
   }
 }
+
+
+body {
+  margin: 0;
+  line-height: normal;
+}
+
+:root {
+  /* fonts */
+  --font-inter: Inter;
+  --font-kanit: Kanit;
+
+  /* font sizes */
+  --font-size-5xl: 24px;
+  --font-size-lgi: 19px;
+  --font-size-9xl: 28px;
+  --font-size-3xl: 22px;
+  --font-size-xl: 20px;
+
+  /* Colors */
+  --color-white: #fff;
+  --color-black: #000;
+  --color-crimson: #d52c2c;
+  --color-darkturquoise: rgba(34, 227, 239, 0.87);
+  --color-gray-100: rgba(0, 0, 0, 0.79);
+
+  /* Gaps */
+  --gap-base: 16px;
+  --gap-12xl: 31px;
+  --gap-xl: 20px;
+  --gap-31xl: 50px;
+  --gap-6xl: 25px;
+
+  /* Paddings */
+  --padding-xl: 20px;
+  --padding-11xs: 2px;
+  --padding-25xl: 44px;
+  --padding-12xl: 31px;
+  --padding-10xl: 29px;
+  --padding-xs: 12px;
+  --padding-15xl: 34px;
+  --padding-12xs: 1px;
+  --padding-lgi: 19px;
+  --padding-6xs: 7px;
+  --padding-mid: 17px;
+  --padding-19xl: 38px;
+  --padding-4xs: 9px;
+  --padding-18xl: 37px;
+  --padding-5xl: 24px;
+  --padding-smi: 13px;
+}
