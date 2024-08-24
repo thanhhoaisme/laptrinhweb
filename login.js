@@ -13,7 +13,7 @@ function login() {
         body: JSON.stringify({
             //username and password are parameters, which declared above
             username: username,
-            password: password
+            password: password,
         })
     })
 
