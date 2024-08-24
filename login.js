@@ -25,7 +25,9 @@ function login() {
         console.log(loginRespond);   // test JSON file in console - for debug ONLY !!!
         if (loginRespond.agency_id === username && loginRespond.pass_word === password) {
             
-            window.location.href = '../LoginSuccess/Dashboard/Dashboard.html'; // Chuyển hướng nếu đăng nhập thành công
+            window.location.href = '/admin/admin.html';;
+             // Chuyển hướng nếu đăng nhập thành công
+             alert("đăng nhập thành công");
         } 
         else {
             alert("Đăng nhập không thành công, vui lòng kiểm tra lại thông tin đăng nhập của bạn.");
