@@ -1,36 +1,53 @@
-// REST - client server (get -> yeu cau dl server, post -> gui yeu cau len server, update -> yeu cau update len server, delete)
 
-function login() {
+// Asynchronous function to handle login attempts (both admin and regular user)
+async function login() {
     let username = document.getElementById('username').value;
-    let password = document.getElementById('password').value;
+    let password = document.getElementById('password').value;   
 
-    fetch('http://localhost:8989/login', {
-        method: 'post',
 
-        headers: {
-            "Content-type": "application/json; charset=UTF-8"
+    try {
+        // Attempt admin login first
+        const adminResponse = await fetch('http://localhost:8989/loginadmin', {
+            method: 'post',
+            headers: {
+                "Content-type": "application/json; charset=UTF-8"
             },
-        body: JSON.stringify({
-            //username and password are parameters, which declared above
-            username: username,
-            password: password,
-        })
-    })
+            body: JSON.stringify({ username, password }) 
+        });
 
-    .then(res => res.json()) //parse data send from BE to JSON format - the line that receives the data (JSON object) 
-    
-    // loginRespond -> data after being parsed by JSON 
-    .then(loginRespond => {
-
-        console.log(loginRespond);   // test JSON file in console - for debug ONLY !!!
-        if (loginRespond.agency_id === username && loginRespond.pass_word === password) {
-            
-            window.location.href = '/admin/admin.html';;
-             // Chuyển hướng nếu đăng nhập thành công
-             alert("đăng nhập thành công");
+        if (adminResponse.ok) {
+            // You might want to use the response data here, e.g., to store user information
+            window.location.href = '/admin/admin.html';
+            alert("Đăng nhập thành công với tư cách admin"); 
+            return; 
         } 
-        else {
-            alert("Đăng nhập không thành công, vui lòng kiểm tra lại thông tin đăng nhập của bạn.");
-        }
-    });
+
+        // If admin login fails, attempt regular user login
+        const userResponse = await fetch('http://localhost:8989/login', {
+            method: 'post',
+            headers: {
+                "Content-type": "application/json; charset=UTF-8"
+            },
+            body: JSON.stringify({   
+ username, password })
+        });
+
+        if (userResponse.ok) {
+            // You might want to use the response data here, e.g., to store user information
+            window.location.href = '/Homepage/Homepage.html';
+            alert("Đăng nhập thành công");
+        } else {
+            try {
+                const errorData = await userResponse.json(); // Try to get error details from the server
+                alert(`Đăng nhập không thành công: ${errorData.message || 'Lỗi không xác định'}`);
+            } catch (error) {
+                console.error("Error parsing login response:", error);
+                alert("Đăng nhập không thành công, vui lòng kiểm tra lại thông tin đăng nhập của bạn.");
+            }
+        } 
+
+    } catch (error) {
+        console.error("Error during login:", error);
+        alert("Đã xảy ra lỗi trong quá trình đăng nhập. Vui lòng thử lại sau.");
+    }
 }

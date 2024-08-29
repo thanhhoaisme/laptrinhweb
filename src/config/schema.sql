@@ -1,0 +1,19 @@
+
+CREATE TABLE dataCUSTOMER (
+    CustomerID INT AUTO_INCREMENT PRIMARY KEY,
+    Email VARCHAR(255) NOT NULL UNIQUE,
+    Customer_Name VARCHAR(255) NOT NULL,
+    Phone_No VARCHAR(10) NOT NULL UNIQUE,
+    Address VARCHAR(255) NOT NULL
+);
+
+CREATE TABLE dataloginadmin  (
+	admin_ID VARCHAR (255),
+	Pass_Word VARCHAR (255) NOT NULL,
+	PRIMARY KEY (admin_ID)
+);
+CREATE TABLE datalogincus  (
+	cus_ID VARCHAR (255),
+	Pass_Word VARCHAR (255) NOT NULL,
+	PRIMARY KEY (admin_ID)
+);

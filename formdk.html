@@ -1,0 +1,129 @@
+<div class="container mt-5">
+    <link rel="stylesheet" href="formdk.css">
+    <form> 
+        <div class="tab-right-panel" id="tab-registration"> 
+            <p class="tab_right-hdesc">
+                <label class="d-md-none"><h1>Đăng ký</h1></label> 
+                Hãy nhập thông tin để đăng ký tài khoản mới.
+            </p>
+
+            <div class="vf-form">
+                <div class="row group-customer">
+                    <div class="col-12 group-title"><b>Thông tin khách hàng</b></div>
+
+                    <div class="col-12 group-personal mb-4">
+                        <div class="form-label-group has-icon root_numText lastname">
+                            <label for="customer_name">Họ và tên<i style="color: red">*</i></label>
+                            <input 
+                                type="text" 
+                                name="customer_name" 
+                                id="customer_name" 
+                                required 
+                                maxlength="255" 
+                                class="js_numText form-control" 
+                                placeholder="Họ và tên" 
+                                pattern="^[^!@$#%^&*<>()-=./]+$" 
+                                data-missing-error="Vui lòng nhập họ và tên" 
+                                data-parse-error="Trường không được chứa ký tự đặc biệt"
+                                data-input-invalid="Trường không được chứa ký tự đặc biệt" 
+                                value="" 
+                                aria-describedby="CustomerNameError"
+                            />
+                            <div class="icon"><i class="fas fa-user"></i></div>
+                            <div class="invalid-feedback" id="CustomerNameError"></div>
+                        </div>
+                    </div>
+
+                    <div class="col-12 mb-4">
+                        <div class="form-label-group has-icon phone">
+                            <label for="customer_phone_no">Số điện thoại<i style="color: red">*</i></label>
+                            <input 
+                                type="tel" 
+                                name="customer_phone_no" 
+                                id="customer_phone_no" 
+                                required 
+                                maxlength="10" 
+                                minlength="9" 
+                                pattern="^((\+?84)|0)((3([2-9]))|(5([25689]))|(7([0|6-9]))|(8([1-9]))|(9([0-9])))([0-9]{7})$" 
+                                placeholder="Số điện thoại" 
+                                data-missing-error="Vui lòng nhập số điện thoại."
+                                data-parse-error="Số điện thoại của Quý khách chưa đúng. Vui lòng kiểm tra lại." 
+                                class="form-control" 
+                                value="" 
+                                aria-describedby="NumberPhoneError"
+                            />
+                            <div class="icon"><i class="fas fa-phone"></i></div>
+                            <div class="invalid-feedback" id="NumberPhoneError"></div>
+                        </div>
+                    </div>
+
+                    <div class="col-12 mb-4">
+                        <div class="form-label-group has-icon email">
+                            <label for="customer_email">Email<i style="color: red">*</i></label>
+                            <input 
+                                type="email" 
+                                name="customer_email" 
+                                id="customer_email" 
+                                required 
+                                maxlength="255" 
+                                placeholder="Email" 
+                                data-missing-error="Vui lòng nhập email." 
+                                data-parse-error="Email của Quý khách chưa đúng. Vui lòng kiểm tra lại." 
+                                class="form-control" 
+                                value="" 
+                                aria-describedby="EmailError"
+                            />
+                            <div class="icon"><i class="fas fa-envelope"></i></div>
+                            <div class="invalid-feedback" id="EmailError"></div>
+                        </div>
+                    </div>
+
+                    <div class="col-12 mb-4">
+                        <div class="form-label-group has-icon address">
+                            <label for="customer_address">Địa chỉ<i style="color: red">*</i></label> 
+                            <input 
+                                type="text" 
+                                name="customer_address" 
+                                id="customer_address" 
+                                required 
+                                maxlength="255" 
+                                placeholder="Địa chỉ: Số nhà, đường, phường, quận, tỉnh/thành phố" 
+                                data-missing-error="Vui lòng nhập địa chỉ." 
+                                class="form-control" 
+                                value="" 
+                                aria-describedby="AddressError"
+                            />
+                            <div class="icon"><i class="fas fa-map-marker-alt"></i></div>
+                            <div class="invalid-feedback" id="AddressError"></div> 
+                        </div>
+                    </div>
+
+                    <div class="col-12 mb-4">
+                        <div class="form-label-group has-icon password">
+                            <label for="customer_password">Mật khẩu<i style="color: red">*</i></label>
+                            <input 
+                                type="password" 
+                                name="customer_password" 
+                                id="customer_password" 
+                                required 
+                                minlength="6" 
+                                maxlength="20"
+                                placeholder="Mật khẩu" 
+                                data-missing-error="Vui lòng nhập mật khẩu." 
+                                data-minlength-error="Mật khẩu phải có ít nhất 6 ký tự."
+                                class="form-control" 
+                                value="" 
+                                aria-describedby="PasswordError"
+                            />
+                            <div class="icon"><i class="fas fa-lock"></i></div>
+                            <div class="invalid-feedback" id="PasswordError"></div> 
+                        </div>
+                    </div>
+
+                </div> 
+            </div>
+
+            <button type="submit" id="register-button" onclick="registerUser()" class="btn btn-primary">Đăng ký</button>
+        </div>
+    </form>
+</div>

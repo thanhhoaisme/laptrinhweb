@@ -12,10 +12,11 @@ exports.login = async (req, res) => {
         //pool is "object" format -> query in object format ***
         const result = await database.pool.query({
 
-            text: `SELECT Agency_ID, Pass_word 
-            FROM dataAGENCY 
-            WHERE Agency_ID = $1 AND Pass_word = $2`,
-            
+            text: `SELECT cus_ID, Pass_word 
+            FROM datalogincus
+            WHERE cus_ID = $1 AND Pass_word = $2`,
+        
+
             values: [username, password]
         });
   
@@ -23,10 +24,10 @@ exports.login = async (req, res) => {
         // "result" after query 
 
         if (result.rows.length > 0) {
-            const agencyData = result.rows[0]; // Get the first row (successful login)
-            delete agencyData.Pass_word; // Remove password before sending the response (optional)
+            const datalogincus = result.rows[0]; // Get the first row (successful login)
+            delete datalogincus.Pass_word; // Remove password before sending the response (optional)
 
-            res.status(200).json(agencyData); 
+            res.status(200).json(datalogincus); 
             
         } 
         
