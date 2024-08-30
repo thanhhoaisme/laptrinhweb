@@ -8,6 +8,7 @@ const pool = require('./config/db');
 app.use(cors());
 // import routes
 const loginRoutes = require ('./routes/loginRoutes');
+const loginadminRoutes = require('./routes/loginadminRoutes');
 
 // -- Fix cors issue - this line of code 
 app.use((req, res, next) => {
@@ -19,6 +20,7 @@ app.use((req, res, next) => {
 app.use(express.json());
 // use routes
 app.use('/login', loginRoutes);
+app.use('/loginadmin',loginadminRoutes);
 // Run Server 
 app.listen(8989, () => {
     console.log('Server backend running on 8989');
