@@ -12,9 +12,9 @@ exports.login = async (req, res) => {
         //pool is "object" format -> query in object format ***
         const result = await database.pool.query({
 
-            text: `SELECT cus_ID, Pass_word 
+            text: `SELECT Loginvalue, Pass_word 
             FROM datalogincus
-            WHERE cus_ID = $1 AND Pass_word = $2`,
+            WHERE Loginvalue= $1 AND Pass_word = $2`,
         
 
             values: [username, password]
