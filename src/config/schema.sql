@@ -8,11 +8,8 @@ CREATE TABLE customers (
 	Pass_Word VARCHAR (255) NOT NULL
 );
 drop table customers
-
-SELECT dl.CustomerID, dl.Pass_Word 
+ SELECT dl.Loginvalue, dl.Pass_Word
 FROM datalogincus dl
-JOIN customers c ON dl.CustomerID = c.CustomerID
-WHERE c.Email = 'giá_trị_đăng_nhập' OR c.Phone_No = 'giá_trị_đăng_nhập';
 
 -- Admin Logins
 CREATE TABLE dataloginadmin (
@@ -66,3 +63,9 @@ CREATE TABLE order_items (
 );
 
 select * from customers
+select * from	datalogincus
+
+ALTER TABLE logincredentials DROP CONSTRAINT logincredentials_userid_fkey;
+
+ALTER TABLE customers ALTER COLUMN pass_word SET DEFAULT 'some_default_password';
+
