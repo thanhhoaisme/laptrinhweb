@@ -1,9 +1,14 @@
 .fahasa-logo-1-icon {
-  width: 479px;
+  width: 400px;
   position: relative;
   max-height: 100%;
   object-fit: cover;
   max-width: 100%;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.fahasa-logo-1-icon:hover{
+  transform: scale(1.1); /* Phóng to ảnh khi hover */
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3); /* Thêm bóng đổ */
 }
 .blacklist-1-icon {
   height: 30px;
@@ -205,6 +210,11 @@
   position: relative;
   max-height: 100%;
   object-fit: cover;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.phuongphapgiaivatlitheochuyend-icon:hover{
+  transform: scale(1.1); /* Phóng to ảnh khi hover */
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3); /* Thêm bóng đổ */
 }
 .bi-tp-vt,
 .div {
@@ -277,6 +287,11 @@
   max-width: 100%;
   overflow: hidden;
   object-fit: cover;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.sach-phuong-phap-giai-toan-chu-icon:hover {
+  transform: scale(1.1); /* Phóng to ảnh khi hover */
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3); /* Thêm bóng đổ */
 }
 .sach-phuong-phap-giai-toan-chu-wrapper {
   width: 220px;
@@ -355,6 +370,10 @@
   position: relative;
   max-height: 100%;
   object-fit: cover;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}  .cau-hoi-va-bai-tap-boi-duong-h-icon:hover {
+  transform: scale(1.1); /* Phóng to ảnh khi hover */
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3); /* Thêm bóng đổ */
 }
 .bi-tp-a {
   width: 151px;
@@ -424,6 +443,11 @@
   max-width: 100%;
   overflow: hidden;
   object-fit: cover;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.bai-tap-tieng-anh-12-khong-dap-icon:hover{
+  transform: scale(1.1); /* Phóng to ảnh khi hover */
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3); /* Thêm bóng đổ */
 }
 .bai-tap-tieng-anh-12-khong-dap-wrapper {
   width: 168px;
@@ -982,7 +1006,13 @@
   position: relative;
   max-height: 100%;
   object-fit: cover;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
+.sach-combo-vstep-chinh-phuc-ky-icon:hover{
+  transform: scale(1.1); /* Phóng to ảnh khi hover */
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3); /* Thêm bóng đổ */
+}
+
 .combo-vstep {
   position: relative;
   mix-blend-mode: exclusion;
@@ -1058,6 +1088,11 @@
   max-width: 100%;
   overflow: hidden;
   object-fit: cover;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.dong-tu-bat-quy-tac-bia-truoc-icon:hover{
+  transform: scale(1.1); /* Phóng to ảnh khi hover */
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3); /* Thêm bóng đổ */
 }
 .english-price-container {
   align-self: stretch;
@@ -1136,6 +1171,11 @@
   max-width: 100%;
   overflow: hidden;
   object-fit: cover;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.combo-3-cuon-25-chuyen-de-ngu-icon:hover{
+  transform: scale(1.1); /* Phóng to ảnh khi hover */
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3); /* Thêm bóng đổ */
 }
 .language-books {
   width: 186px;
@@ -1198,6 +1238,11 @@
   max-width: 100%;
   overflow: hidden;
   object-fit: cover;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.english-collocations-in-news-d-icon:hover{
+  transform: scale(1.1); /* Phóng to ảnh khi hover */
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3); /* Thêm bóng đổ */
 }
 .next-book-row {
   width: 246px;
@@ -1334,6 +1379,11 @@
 .sach-bi-mat-tu-duy-trieu-phu-l-icon {
   height: 215px;
   flex: 1;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.sach-bi-mat-tu-duy-trieu-phu-l-icon:hover{
+  transform: scale(1.1); /* Phóng to ảnh khi hover */
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3); /* Thêm bóng đổ */
 }
 .fruitful-image {
   align-self: stretch;
@@ -1412,6 +1462,11 @@
   max-width: 100%;
   overflow: hidden;
   object-fit: cover;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.think-grow-rich-nghi-giau-va-l-icon:hover{
+  transform: scale(1.1); /* Phóng to ảnh khi hover */
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3); /* Thêm bóng đổ */
 }
 .fruitful-books {
   width: 152px;
@@ -1481,6 +1536,11 @@
   max-width: 100%;
   overflow: hidden;
   object-fit: cover;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.combo-3-cuon-suc-manh-tiem-thu-icon:hover{
+  transform: scale(1.1); /* Phóng to ảnh khi hover */
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3); /* Thêm bóng đổ */
 }
 .fruit-price-container {
   align-self: stretch;
@@ -1543,6 +1603,11 @@
   max-width: 100%;
   overflow: hidden;
   object-fit: cover;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.sach-dan-dat-su-thay-doi-l-1-icon:hover{
+  transform: scale(1.1); /* Phóng to ảnh khi hover */
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3); /* Thêm bóng đổ */
 }
 .second-business-row {
   align-self: stretch;

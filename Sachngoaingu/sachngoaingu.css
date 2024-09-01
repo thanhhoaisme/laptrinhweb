@@ -151,7 +151,11 @@
   color: var(--color-white);
   font-family: var(--font-inter);
 }
-
+.trang-ch a{
+  position: relative;
+  text-decoration: none; /* Loại bỏ gạch dưới */
+  color: inherit; /* Dùng màu chữ của phần tử cha */
+}
 .site-title {
   width: 554px;
   display: flex;
@@ -167,13 +171,17 @@
     -1px 0 0 rgba(0, 0, 0, 0.38), 0-1px 0 rgba(0, 0, 0, 0.38);
 }
 .danh-mc,
-.sch-cp-tham {
+.sch-cp-tham a{
   align-self: stretch;
   position: relative;
+  text-decoration: none; /* Loại bỏ gạch dưới */
+  color: inherit; /* Dùng màu chữ của phần tử cha */
 }
-.sch-thiu-nhi {
+.sch-thiu-nhi a{
   flex: 1;
   position: relative;
+  text-decoration: none; /* Loại bỏ gạch dưới */
+  color: inherit; /* Dùng màu chữ của phần tử cha */
 }
 .category-items {
   align-self: stretch;
@@ -184,9 +192,11 @@
   padding: 0 0 4px;
   color: rgba(0, 0, 0, 0.78);
 }
-.sch-ngoi-ng {
+.sch-ngoi-ng a{
   flex: 1;
   position: relative;
+  text-decoration: none; /* Loại bỏ gạch dưới */
+  color: inherit; /* Dùng màu chữ của phần tử cha */
 }
 .category-items1 {
   align-self: stretch;
@@ -197,9 +207,11 @@
   padding: 0 0 var(--padding-smi);
   color: rgba(0, 0, 0, 0.8);
 }
-.sch-kinh-doanh {
+.sch-kinh-doanh a{
   align-self: stretch;
   position: relative;
+  text-decoration: none; /* Loại bỏ gạch dưới */
+  color: inherit; /* Dùng màu chữ của phần tử cha */
 }
 .category-header,
 .category-list {
@@ -262,6 +274,12 @@
   max-width: 100%;
   overflow: hidden;
   object-fit: cover;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.sach-combo-vstep-chinh-phuc-ky-icon:hover{
+  transform: scale(1.1); /* Phóng to ảnh khi hover */
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3); /* Thêm bóng đổ */
+
 }
 .sach-combo-vstep-chinh-phuc-ky-wrapper {
   align-self: stretch;
@@ -306,6 +324,12 @@
   max-width: 100%;
   overflow: hidden;
   object-fit: cover;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.english-collocations-in-news-d-icon:hover{
+  transform: scale(1.1); /* Phóng to ảnh khi hover */
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3); /* Thêm bóng đổ */
+
 }
 .english-collocations-in-news-d-wrapper {
   align-self: stretch;
@@ -358,6 +382,11 @@
   max-width: 100%;
   overflow: hidden;
   object-fit: cover;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.chinhphuc-1-icon:hover{
+  transform: scale(1.1); /* Phóng to ảnh khi hover */
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3); /* Thêm bóng đổ */
 }
 .chinhphuc-1-wrapper {
   align-self: stretch;
@@ -415,6 +444,11 @@
   max-width: 100%;
   overflow: hidden;
   object-fit: cover;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.dong-tu-bat-quy-tac-bia-truoc-icon:hover{
+  transform: scale(1.1); /* Phóng to ảnh khi hover */
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3); /* Thêm bóng đổ */
 }
 .dong-tu-bat-quy-tac-bia-truoc-wrapper {
   width: 226px;
@@ -461,6 +495,11 @@
   max-width: 100%;
   overflow: hidden;
   object-fit: cover;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.nguphap-1-icon:hover{
+  transform: scale(1.1); /* Phóng to ảnh khi hover */
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3); /* Thêm bóng đổ */
 }
 .nguphap-1-wrapper {
   align-self: stretch;
@@ -505,6 +544,11 @@
   max-width: 100%;
   overflow: hidden;
   object-fit: cover;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.camnang-1-icon:hover{
+  transform: scale(1.1); /* Phóng to ảnh khi hover */
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3); /* Thêm bóng đổ */
 }
 .camnang-1-wrapper {
   width: 226px;
@@ -566,6 +610,11 @@
   max-width: 100%;
   overflow: hidden;
   object-fit: cover;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.combo-3-cuon-25-chuyen-de-ngu-icon:hover{
+  transform: scale(1.1); /* Phóng to ảnh khi hover */
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3); /* Thêm bóng đổ */
 }
 .combo-3-cuon-25-chuyen-de-ngu-wrapper {
   align-self: stretch;
@@ -604,6 +653,11 @@
   max-width: 100%;
   overflow: hidden;
   object-fit: cover;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.tuvungcoban-1-icon:hover{
+  transform: scale(1.1); /* Phóng to ảnh khi hover */
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3); /* Thêm bóng đổ */
 }
 .tuvungcoban-1-wrapper {
   width: 188px;
