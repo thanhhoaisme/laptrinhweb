@@ -14,7 +14,7 @@ FROM datalogincus dl
 -- Admin Logins
 CREATE TABLE dataloginadmin (
     admin_ID VARCHAR (255) PRIMARY KEY,
-    Pass_Word VARCHAR (255) NOT NULL -- Consider storing hashed passwords
+    Pass_Word VARCHAR (255) NOT NULL 
 );
 
 -- Customer Logins
@@ -23,7 +23,7 @@ CREATE TABLE datalogincus (
     CustomerID INT NOT NULL,
     LoginValue VARCHAR(255) NOT NULL UNIQUE,
     Pass_Word VARCHAR (255) NOT NULL,
-    LoginType VARCHAR(10) NOT NULL CHECK (LoginType IN ('email', 'phone')), -- New column
+    LoginType VARCHAR(10) NOT NULL CHECK (LoginType IN ('email', 'phone')), 
     FOREIGN KEY (CustomerID) REFERENCES customers(CustomerID) 
 );
 drop table  datalogincus 
@@ -36,7 +36,7 @@ CREATE TABLE books (
     Stock_Quantity INT NOT NULL,
     Sold_Quantity INT NOT NULL DEFAULT 0,
     Genre VARCHAR(255)
-    -- Add more columns as needed 
+   
 );
 
 -- Orders 
@@ -69,3 +69,8 @@ ALTER TABLE logincredentials DROP CONSTRAINT logincredentials_userid_fkey;
 
 ALTER TABLE customers ALTER COLUMN pass_word SET DEFAULT 'some_default_password';
 
+CREATE TABLE images (
+    ImageID SERIAL PRIMARY KEY,
+    ImageName VARCHAR(255) NOT NULL,
+    ImageData BYTEA NOT NULL -- Lưu trữ dữ liệu ảnh dưới dạng BLOB (Binary Large Object)
+);

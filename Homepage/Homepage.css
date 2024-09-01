@@ -1,5 +1,5 @@
 .fahasa-logo-1-icon {
-  width: 479px;
+  width: 400px;
   position: relative;
   max-height: 100%;
   object-fit: cover;
@@ -205,6 +205,11 @@
   position: relative;
   max-height: 100%;
   object-fit: cover;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.phuongphapgiaivatlitheochuyend-icon:hover{
+  transform: scale(1.1); /* Phóng to ảnh khi hover */
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3); /* Thêm bóng đổ */
 }
 .bi-tp-vt,
 .div {
@@ -277,6 +282,11 @@
   max-width: 100%;
   overflow: hidden;
   object-fit: cover;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.sach-phuong-phap-giai-toan-chu-icon:hover {
+  transform: scale(1.1); /* Phóng to ảnh khi hover */
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3); /* Thêm bóng đổ */
 }
 .sach-phuong-phap-giai-toan-chu-wrapper {
   width: 220px;
@@ -355,6 +365,10 @@
   position: relative;
   max-height: 100%;
   object-fit: cover;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}  .cau-hoi-va-bai-tap-boi-duong-h-icon:hover {
+  transform: scale(1.1); /* Phóng to ảnh khi hover */
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3); /* Thêm bóng đổ */
 }
 .bi-tp-a {
   width: 151px;
@@ -424,6 +438,11 @@
   max-width: 100%;
   overflow: hidden;
   object-fit: cover;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.bai-tap-tieng-anh-12-khong-dap-icon:hover{
+  transform: scale(1.1); /* Phóng to ảnh khi hover */
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3); /* Thêm bóng đổ */
 }
 .bai-tap-tieng-anh-12-khong-dap-wrapper {
   width: 168px;
