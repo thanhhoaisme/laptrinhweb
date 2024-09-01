@@ -302,6 +302,11 @@
     height: 391px;
     object-fit: cover;
     z-index: 2;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  .nguvan12-1-icon:hover{
+    transform: scale(1.1); /* Phóng to ảnh khi hover */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3); /* Thêm bóng đổ */
   }
   .image-container,
   .product-image {

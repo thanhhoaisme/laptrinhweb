@@ -178,6 +178,13 @@
     position: relative;
     max-width: 100%;
   }
+  .trang-ch a {
+    position: relative;
+    max-width: 100%;
+      text-decoration: none; /* Loại bỏ gạch dưới */
+      color: inherit; /* Dùng màu chữ của phần tử cha */
+  
+  }
   .frame-item {
     height: 48px;
     width: 1663px;
@@ -236,7 +243,13 @@
     position: relative;
     object-fit: cover;
     z-index: 2;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
   }
+  .camnangtaichinh-1-icon:hover {
+    transform: scale(1.1); /* Phóng to ảnh khi hover */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3); /* Thêm bóng đổ */
+}
+
   .cm-nang-ti,
   .product {
     max-width: 100%;
@@ -487,7 +500,13 @@
     overflow: hidden;
     object-fit: cover;
     z-index: 2;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
   }
+  .think-grow-rich-nghi-giau-va-l-icon:hover {
+    transform: scale(1.1); /* Phóng to ảnh khi hover */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3); /* Thêm bóng đổ */
+}
+
   .think-grow-rich-nghi-giau-va-l-wrapper {
     align-self: stretch;
     display: flex;
@@ -555,7 +574,13 @@
     overflow: hidden;
     object-fit: cover;
     z-index: 2;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
   }
+  .ketoan-1-icon:hover {
+    transform: scale(1.1); /* Phóng to ảnh khi hover */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3); /* Thêm bóng đổ */
+}
+
   .ketoan-1-wrapper {
     align-self: stretch;
     display: flex;
@@ -621,7 +646,12 @@
     flex-shrink: 0;
     object-fit: cover;
     z-index: 2;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
   }
+  .quytac-1-icon:hover {
+    transform: scale(1.1); /* Phóng to ảnh khi hover */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3); /* Thêm bóng đổ */
+}
   .div3,
   .quy-tc-s {
     position: relative;
@@ -688,7 +718,13 @@
     flex-shrink: 0;
     object-fit: cover;
     z-index: 1;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+
   }
+  .combo-3-cuon-suc-manh-tiem-thu-icon:hover {
+    transform: scale(1.1); /* Phóng to ảnh khi hover */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3); /* Thêm bóng đổ */
+}
   .combo-3-cun,
   .div4 {
     position: relative;
