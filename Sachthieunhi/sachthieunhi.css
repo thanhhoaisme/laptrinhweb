@@ -161,8 +161,10 @@
   color: var(--color-black);
   font-family: var(--font-inter);
 }
-.trang-ch {
+.trang-ch a {
   position: relative;
+  text-decoration: none; /* Loại bỏ gạch dưới */
+  color: inherit; /* Dùng màu chữ của phần tử cha */
 }
 .content {
   width: 555px;
@@ -179,13 +181,17 @@
     -1px 0 0 rgba(0, 0, 0, 0.38), 0-1px 0 rgba(0, 0, 0, 0.38);
 }
 .danh-mc,
-.sch-cp-tham {
+.sch-cp-tham a {
   align-self: stretch;
   position: relative;
+  text-decoration: none; /* Loại bỏ gạch dưới */
+  color: inherit; /* Dùng màu chữ của phần tử cha */
 }
-.sch-thiu-nhi {
+.sch-thiu-nhi a {
   flex: 1;
   position: relative;
+  text-decoration: none; /* Loại bỏ gạch dưới */
+  color: inherit; /* Dùng màu chữ của phần tử cha */
 }
 .category-dropdown {
   align-self: stretch;
@@ -196,9 +202,11 @@
   padding: 0 0 var(--padding-9xs);
   color: rgba(0, 0, 0, 0.78);
 }
-.sch-ngoi-ng {
+.sch-ngoi-ng a{
   flex: 1;
   position: relative;
+  text-decoration: none; /* Loại bỏ gạch dưới */
+  color: inherit; /* Dùng màu chữ của phần tử cha */
 }
 .category-dropdown1 {
   align-self: stretch;
@@ -209,9 +217,11 @@
   padding: 0 0 var(--padding-smi);
   color: rgba(0, 0, 0, 0.8);
 }
-.sch-kinh-doanh {
+.sch-kinh-doanh a{
   align-self: stretch;
   position: relative;
+  text-decoration: none; /* Loại bỏ gạch dưới */
+  color: inherit; /* Dùng màu chữ của phần tử cha */
 }
 .category-menu,
 .menu-items {
@@ -275,6 +285,11 @@
   max-width: 100%;
   overflow: hidden;
   object-fit: cover;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.xe-kem-ngot-mua-he-2-l-1-icon:hover {
+  transform: scale(1.1); /* Phóng to ảnh khi hover */
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3); /* Thêm bóng đổ */
 }
 .xe-kem-ngot-mua-he-2-l-1-wrapper {
   width: 202px;
@@ -318,6 +333,11 @@
   max-width: 100%;
   overflow: hidden;
   object-fit: cover;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.vancauhoivisao-1-icon:hover{
+  transform: scale(1.1); /* Phóng to ảnh khi hover */
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3); /* Thêm bóng đổ */
 }
 .vancauhoivisao-1-wrapper {
   align-self: stretch;
@@ -382,6 +402,11 @@
   max-width: 100%;
   overflow: hidden;
   object-fit: cover;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.basicwords-1-icon:hover{
+  transform: scale(1.1); /* Phóng to ảnh khi hover */
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3); /* Thêm bóng đổ */
 }
 .basicwords-1-wrapper {
   width: 200px;
@@ -434,6 +459,11 @@
   width: 170px;
   position: relative;
   object-fit: cover;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.sach-luyen-tay-cam-but-tap-to-icon:hover{
+  transform: scale(1.1); /* Phóng to ảnh khi hover */
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3); /* Thêm bóng đổ */
 }
 .sach-luyen-tay-cam-but-tap-to-wrapper {
   align-self: stretch;
@@ -465,6 +495,11 @@
   position: relative;
   max-height: 100%;
   object-fit: cover;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.trai-cay-dai-chien-zombie-tap-icon:hover{
+  transform: scale(1.1); /* Phóng to ảnh khi hover */
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3); /* Thêm bóng đổ */
 }
 .frame-wrapper1,
 .parent {
@@ -531,6 +566,11 @@
   max-width: 100%;
   overflow: hidden;
   object-fit: cover;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.tayduki-1-icon:hover{
+  transform: scale(1.1); /* Phóng to ảnh khi hover */
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3); /* Thêm bóng đổ */
 }
 .tayduki-1-wrapper {
   width: 241px;
@@ -602,6 +642,11 @@
   max-width: 100%;
   overflow: hidden;
   object-fit: cover;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.sach-tu-dien-bang-hinh-chu-cai-icon:hover{
+  transform: scale(1.1); /* Phóng to ảnh khi hover */
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3); /* Thêm bóng đổ */
 }
 .more-books-list {
   align-self: stretch;
@@ -644,6 +689,11 @@
   max-width: 100%;
   overflow: hidden;
   object-fit: cover;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.truyenngungon-1-icon:hover{
+  transform: scale(1.1); /* Phóng to ảnh khi hover */
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3); /* Thêm bóng đổ */
 }
 .more-books-list1 {
   align-self: stretch;
