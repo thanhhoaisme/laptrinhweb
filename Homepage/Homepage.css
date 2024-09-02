@@ -16,37 +16,29 @@
   position: relative;
   object-fit: cover;
 }
-.hamburger-menu {
-  display: none;
+.menu {
   position: absolute;
-  top: 50px; /* Điều chỉnh vị trí theo ý bạn */
-  right: 0;
-  background-color: #fff;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  padding: 10px;
-  border-radius: 8px;
-  z-index: 1000;
+  background-color: #f0f0f0; /* Màu nền xám nhạt */
+  border: 2px solid #ccc; /* Tăng độ dày border */
+  padding: 15px; /* Tăng padding */
+  z-index: 10;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Đổ bóng đậm hơn */
 }
 
-.hamburger-menu ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-}
-
-.hamburger-menu li {
-  padding: 10px 20px;
-  text-align: left;
-}
-
-.hamburger-menu li a {
+.menu a {
+  display: block;
+  padding: 8px; /* Tăng padding cho các mục */
   text-decoration: none;
-  color: #000;
+  color: #333;
+  font-size: 16px; /* Tăng kích thước chữ */
+  transition: background-color 0.3s;
 }
 
-.hamburger-menu li a:hover {
-  color: #007bff;
+.menu a:hover {
+  background-color: #e0e0e0;
 }
+
+
 
 .foreign-language-book-title {
   width: 100%;
