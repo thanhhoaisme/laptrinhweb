@@ -193,6 +193,13 @@
       -1px 0 0 rgba(0, 0, 0, 0.36), 0-1px 0 rgba(0, 0, 0, 0.36);
     z-index: 1;
   }
+  .trang-ch a {
+    position: relative;
+    max-width: 100%;
+      text-decoration: none; /* Loại bỏ gạch dưới */
+      color: inherit; /* Dùng màu chữ của phần tử cha */
+  
+  }
   .page-title,
   .rectangle-group {
     display: flex;
@@ -238,7 +245,12 @@
     position: relative;
     object-fit: cover;
     z-index: 2;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
   }
+  .chinhphuc-1-icon:hover {
+    transform: scale(1.1); /* Phóng to ảnh khi hover */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3); /* Thêm bóng đổ */
+}
   .book-title-parent {
     height: 625px;
     width: 754.4px;
@@ -485,7 +497,12 @@
     overflow: hidden;
     object-fit: cover;
     z-index: 1;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
   }
+  .tuvungcoban-1-icon:hover {
+    transform: scale(1.1); /* Phóng to ảnh khi hover */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3); /* Thêm bóng đổ */
+}
   .tuvungcoban-1-wrapper {
     align-self: stretch;
     display: flex;
@@ -552,7 +569,13 @@
     overflow: hidden;
     object-fit: cover;
     z-index: 2;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
   }
+  .combo-3-cuon-25-chuyen-de-ngu-icon:hover {
+    transform: scale(1.1); /* Phóng to ảnh khi hover */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3); /* Thêm bóng đổ */
+}
+
   .combo-3-cuon-25-chuyen-de-ngu-wrapper {
     align-self: stretch;
     display: flex;
@@ -619,7 +642,13 @@
     overflow: hidden;
     object-fit: cover;
     z-index: 2;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
   }
+  .camnang-1-icon:hover {
+    transform: scale(1.1); /* Phóng to ảnh khi hover */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3); /* Thêm bóng đổ */
+}
+
   .camnang-1-wrapper {
     align-self: stretch;
     display: flex;
@@ -687,7 +716,13 @@
     max-height: 100%;
     object-fit: cover;
     z-index: 1;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
   }
+  .sach-combo-vstep-chinh-phuc-ky-icon:hover {
+    transform: scale(1.1); /* Phóng to ảnh khi hover */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3); /* Thêm bóng đổ */
+}
+
   .combo-vstep {
     position: relative;
     z-index: 1;
