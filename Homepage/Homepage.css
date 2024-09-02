@@ -16,6 +16,38 @@
   position: relative;
   object-fit: cover;
 }
+.hamburger-menu {
+  display: none;
+  position: absolute;
+  top: 50px; /* Điều chỉnh vị trí theo ý bạn */
+  right: 0;
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 10px;
+  border-radius: 8px;
+  z-index: 1000;
+}
+
+.hamburger-menu ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.hamburger-menu li {
+  padding: 10px 20px;
+  text-align: left;
+}
+
+.hamburger-menu li a {
+  text-decoration: none;
+  color: #000;
+}
+
+.hamburger-menu li a:hover {
+  color: #007bff;
+}
+
 .foreign-language-book-title {
   width: 100%;
   border: 0;
