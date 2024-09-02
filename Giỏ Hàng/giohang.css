@@ -1,0 +1,507 @@
+.fahasa-logo-1-icon {
+    width: 479px;
+    position: relative;
+    max-height: 100%;
+    object-fit: cover;
+    max-width: 100%;
+  }
+  .blacklist-1-icon {
+    height: 45px;
+    width: 45px;
+    position: relative;
+    object-fit: cover;
+  }
+  .frame-child,
+  .nhp-t-kha {
+    position: relative;
+    max-width: 100%;
+  }
+  .frame-child {
+    height: 48px;
+    width: 383px;
+    background-color: var(--color-gainsboro);
+    display: none;
+  }
+  .nhp-t-kha {
+    flex: 1;
+    display: inline-block;
+    text-shadow: 1px 0 0 transparent, 0 1px 0 transparent, -1px 0 0 transparent,
+      0-1px 0 transparent;
+    z-index: 1;
+  }
+  .rectangle-parent {
+    flex: 1;
+    background-color: var(--color-gainsboro);
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 10.6px 0 6.7px 13px;
+    box-sizing: border-box;
+    min-width: 249px;
+  }
+  .blacklist-1-parent,
+  .frame-container,
+  .rectangle-parent {
+    display: flex;
+    justify-content: flex-start;
+    max-width: 100%;
+  }
+  .blacklist-1-parent {
+    align-self: stretch;
+    flex-direction: row;
+    align-items: flex-end;
+    gap: var(--gap-2xl);
+  }
+  .frame-container {
+    width: 449px;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 45px 0 0;
+    box-sizing: border-box;
+  }
+  .key-icon-1 {
+    height: 33px;
+    width: 33px;
+    position: relative;
+    object-fit: cover;
+  }
+  .ng-k {
+    text-decoration: none;
+    position: relative;
+    color: inherit;
+    display: inline-block;
+    min-width: 75px;
+  }
+  .frame-wrapper1,
+  .key-icon-1-parent,
+  .ng-k-wrapper {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+  .ng-k-wrapper {
+    flex-direction: column;
+    padding: var(--padding-12xs) 0 0;
+  }
+  .frame-wrapper1,
+  .key-icon-1-parent {
+    flex-direction: row;
+  }
+  .frame-wrapper1 {
+    flex-direction: column;
+    padding: var(--padding-12xs) 0 0;
+  }
+  .lock-1-icon {
+    height: 29px;
+    width: 30px;
+    position: relative;
+    object-fit: cover;
+    min-height: 29px;
+  }
+  .ng-nhp {
+    text-decoration: none;
+    position: relative;
+    color: inherit;
+    display: inline-block;
+    min-width: 104px;
+  }
+  .ng-nhp-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 3px 0 0;
+  }
+  .lock-1-parent {
+    justify-content: flex-start;
+    gap: 7px;
+  }
+  .frame-div,
+  .frame-group,
+  .lock-1-parent {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+  }
+  .frame-div {
+    justify-content: flex-start;
+    gap: 49px;
+    color: var(--color-white);
+  }
+  .frame-group {
+    align-self: stretch;
+    justify-content: space-between;
+    max-width: 100%;
+    gap: var(--gap-xl);
+  }
+  .fahasa-logo-1-parent,
+  .frame-wrapper {
+    display: flex;
+    box-sizing: border-box;
+    max-width: 100%;
+  }
+  .frame-wrapper {
+    width: 865px;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-end;
+    padding: 0 0 7px;
+    min-width: 865px;
+  }
+  .fahasa-logo-1-parent {
+    align-self: stretch;
+    background-color: #d52c2c;
+    overflow: hidden;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: space-between;
+    padding: 12px 11px 31px 24px;
+    gap: var(--gap-xl);
+    text-align: left;
+    font-size: var(--font-size-xl);
+    color: var(--color-black);
+    font-family: var(--font-inter);
+  }
+  .frame-item,
+  .trang-ch {
+    position: relative;
+    max-width: 100%;
+  }
+  .trang-ch a {
+    position: relative;
+    max-width: 100%;
+      text-decoration: none; /* Loại bỏ gạch dưới */
+      color: inherit; /* Dùng màu chữ của phần tử cha */
+  
+  }
+  .frame-item {
+    height: 48px;
+    width: 1663px;
+    background-color: var(--color-gray-100);
+    display: none;
+  }
+  .trang-ch {
+    width: 1547.5px;
+    display: flex;
+    align-items: center;
+    flex-shrink: 0;
+    text-shadow: 1px 0 0 rgba(0, 0, 0, 0.36), 0 1px 0 rgba(0, 0, 0, 0.36),
+      -1px 0 0 rgba(0, 0, 0, 0.36), 0-1px 0 rgba(0, 0, 0, 0.36);
+    z-index: 1;
+  }
+  .frame-parent,
+  .rectangle-group {
+    align-self: stretch;
+    display: flex;
+    align-items: flex-start;
+    max-width: 100%;
+  }
+  .rectangle-group {
+    background-color: var(--color-gray-100);
+    flex-direction: row;
+    justify-content: flex-end;
+    padding: 9px 35px 10px;
+    box-sizing: border-box;
+  }
+  .frame-parent {
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 37px;
+    text-align: left;
+    font-size: 24px;
+    color: rgba(0, 0, 0, 0.9);
+    font-family: var(--font-inter);
+  }
+  .frame-child1,
+  .frame-inner {
+    height: 340px;
+    position: relative;
+    border: 1px solid var(--color-black);
+    box-sizing: border-box;
+    max-width: 100%;
+  }
+  .frame-inner {
+    background-color: var(--color-white);
+    width: auto;
+    outline: 0;
+    flex: 1;
+    min-width: 722px;
+  }
+  .frame-child1 {
+    width: 552px;
+    overflow: hidden;
+    flex-shrink: 0;
+    min-width: 552px;
+  }
+  .frame-section,
+  .quangcao-1-icon {
+    align-self: stretch;
+    max-width: 100%;
+  }
+  .frame-section {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 0 0 65px;
+    box-sizing: border-box;
+    row-gap: 20px;
+  }
+  .quangcao-1-icon {
+    position: relative;
+    overflow: hidden;
+    max-height: 100%;
+    object-fit: cover;
+  }
+  .h-tr {
+    margin: 0;
+  }
+  .chnh-sch-i {
+    text-decoration: underline;
+  }
+  .chnh-sch-i-tr-hon-ti2 {
+    color: inherit;
+  }
+  .chnh-sch-i-tr-hon-ti1 {
+    margin-bottom: 0;
+  }
+  .chnh-sch-bo {
+    text-decoration: underline;
+  }
+  .chnh-sch-bo-hnh-bi-hon1 {
+    color: inherit;
+  }
+  .chnh-sch-bo-hnh-bi-hon {
+    margin-bottom: 0;
+  }
+  .chnh-sch-vn {
+    text-decoration: underline;
+  }
+  .chnh-sch-vn-chuyn1 {
+    color: inherit;
+  }
+  .chnh-sch-vn-chuyn {
+    margin-bottom: 0;
+  }
+  .chnh-sch-khch {
+    text-decoration: underline;
+  }
+  .chnh-sch-khch-s1 {
+    color: inherit;
+  }
+  .chnh-sch-khch-s {
+    margin-bottom: 0;
+  }
+  .phng-thc-thanh {
+    text-decoration: underline;
+  }
+  .phng-thc-thanh-ton-v-xut {
+    color: inherit;
+  }
+  .chnh-sch-i-tr-hon-ti {
+    margin: 0;
+    font-family: inherit;
+    font-size: var(--font-size-base);
+    padding-left: var(--padding-2xl);
+    color: var(--color-gray-200);
+  }
+  .h-tr-chnh-container {
+    align-self: stretch;
+    position: relative;
+  }
+  .h-tr-chnh-sch-i-tr-wrapper {
+    width: 301px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: var(--padding-8xs) 0 0;
+    box-sizing: border-box;
+    min-width: 301px;
+  }
+  .dch-v {
+    margin: 0;
+  }
+  .iu-khon-s {
+    text-decoration: underline;
+  }
+  .iu-khon-s-dng1 {
+    color: inherit;
+  }
+  .chnh-sch-bo-mt-thng-tin-c,
+  .iu-khon-s-dng {
+    margin-bottom: 0;
+  }
+  .chnh-sch-bo1 {
+    text-decoration: underline;
+  }
+  .chnh-sch-bo-mt-thanh-ton1 {
+    color: inherit;
+  }
+  .chnh-sch-bo-mt-thanh-ton {
+    margin-bottom: 0;
+  }
+  .gii-thiu-fahasa1 {
+    text-decoration: underline;
+  }
+  .gii-thiu-fahasa {
+    color: inherit;
+  }
+  .iu-khon-s-dng-chnh-sch-b {
+    margin: 0;
+    font-family: inherit;
+    font-size: var(--font-size-base);
+    padding-left: var(--padding-2xl);
+    color: var(--color-gray-300);
+  }
+  .dch-v-iu-container {
+    position: relative;
+  }
+  .dch-v-iu-khon-s-dng-ch-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: var(--padding-8xs) 0 0;
+    box-sizing: border-box;
+    min-width: 317px;
+  }
+  .like-nhn {
+    position: relative;
+  }
+  .frame-parent2 {
+    justify-content: flex-start;
+    gap: 76px;
+    min-width: 664px;
+  }
+  .frame-parent1,
+  .frame-parent2,
+  .frame-wrapper2 {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    max-width: 100%;
+  }
+  .frame-parent1 {
+    width: 1100px;
+    justify-content: space-between;
+    gap: var(--gap-xl);
+  }
+  .frame-wrapper2 {
+    align-self: stretch;
+    justify-content: center;
+    padding: 0 20px 0 var(--padding-2xl);
+    box-sizing: border-box;
+  }
+  .main-layout,
+  .quangcao-1-parent {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+  .quangcao-1-parent {
+    align-self: stretch;
+    align-items: flex-end;
+    gap: 86px;
+    max-width: 100%;
+    text-align: left;
+    font-size: var(--font-size-xl);
+    color: var(--color-black);
+    font-family: var(--font-inter);
+  }
+  .main-layout {
+    width: 100%;
+    position: relative;
+    background-color: var(--color-white);
+    overflow: hidden;
+    align-items: flex-start;
+    padding: 0 0 367px;
+    box-sizing: border-box;
+    gap: 143px;
+    line-height: normal;
+    letter-spacing: normal;
+  }
+  @media screen and (max-width: 1400px) {
+    .frame-wrapper {
+      flex: 1;
+    }
+    .fahasa-logo-1-parent {
+      flex-wrap: wrap;
+    }
+    .frame-child1 {
+      flex: 1;
+    }
+    .frame-section {
+      flex-wrap: wrap;
+    }
+  }
+  @media screen and (max-width: 1200px) {
+    .frame-wrapper {
+      min-width: 100%;
+    }
+    .frame-parent2,
+    .h-tr-chnh-sch-i-tr-wrapper {
+      flex: 1;
+    }
+    .frame-parent1 {
+      flex-wrap: wrap;
+    }
+    .quangcao-1-parent {
+      gap: 43px;
+    }
+    .main-layout {
+      gap: 71px;
+    }
+  }
+  @media screen and (max-width: 825px) {
+    .frame-group {
+      flex-wrap: wrap;
+    }
+    .frame-child1,
+    .frame-inner {
+      min-width: 100%;
+    }
+    .dch-v-iu-khon-s-dng-ch-wrapper {
+      flex: 1;
+    }
+    .frame-parent2 {
+      gap: 38px;
+      flex-wrap: wrap;
+      min-width: 100%;
+    }
+  }
+  @media screen and (max-width: 450px) {
+    .nhp-t-kha {
+      font-size: var(--font-size-base);
+    }
+    .blacklist-1-parent {
+      flex-wrap: wrap;
+    }
+    .ng-nhp {
+      font-size: var(--font-size-base);
+    }
+    .frame-div {
+      gap: 24px;
+    }
+    .trang-ch {
+      font-size: 19px;
+    }
+    .frame-parent {
+      gap: 18px;
+    }
+    .frame-section {
+      padding-bottom: 42px;
+      box-sizing: border-box;
+    }
+    .like-nhn {
+      font-size: var(--font-size-base);
+    }
+    .frame-parent2 {
+      gap: 19px;
+    }
+    .quangcao-1-parent {
+      gap: var(--gap-2xl);
+    }
+    .main-layout {
+      gap: 36px;
+    }
+  }
