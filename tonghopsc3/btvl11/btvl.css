@@ -174,9 +174,11 @@
   padding: 0 0 var(--padding-5xl);
 }
 .frame-item,
-.trang-ch {
+.trang-ch a{
   position: relative;
   max-width: 100%;
+  text-decoration: none; /* Loại bỏ gạch dưới */
+  color: inherit; /* Dùng màu chữ của phần tử cha */
 }
 .frame-item {
   height: 48px;
@@ -237,6 +239,11 @@
   object-fit: cover;
   max-width: 100%;
   z-index: 2;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.phuongphapgiaivatlitheochuyend-icon:hover{
+  transform: scale(1.1); /* Phóng to ảnh khi hover */
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3); /* Thêm bóng đổ */
 }
 .product-image {
   height: 625px;
@@ -475,6 +482,11 @@
   overflow: hidden;
   object-fit: cover;
   z-index: 1;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.sach-phuong-phap-giai-toan-chu-icon:hover{
+  transform: scale(1.1); /* Phóng to ảnh khi hover */
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3); /* Thêm bóng đổ */
 }
 .social-media {
   align-self: stretch;
@@ -541,6 +553,11 @@
   position: relative;
   object-fit: cover;
   z-index: 1;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.cau-hoi-va-bai-tap-boi-duong-h-icon:hover{
+  transform: scale(1.1); /* Phóng to ảnh khi hover */
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3); /* Thêm bóng đổ */
 }
 .bi-tp-a,
 .div3 {
@@ -610,6 +627,11 @@
   overflow: hidden;
   object-fit: cover;
   z-index: 1;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.bai-tap-tieng-anh-12-khong-dap-icon:hover{
+  transform: scale(1.1); /* Phóng to ảnh khi hover */
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3); /* Thêm bóng đổ */
 }
 .bai-tap-tieng-anh-12-khong-dap-wrapper {
   align-self: stretch;
@@ -679,6 +701,11 @@
   overflow: hidden;
   flex-shrink: 0;
   object-fit: cover;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.toan12-1-icon:hover{
+  transform: scale(1.1); /* Phóng to ảnh khi hover */
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3); /* Thêm bóng đổ */
 }
 .bi-tp-ton,
 .div5,

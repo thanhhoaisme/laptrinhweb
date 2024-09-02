@@ -171,6 +171,12 @@
   justify-content: flex-start;
   padding: 0 0 var(--padding-5xl);
 }
+.trang-ch a{
+  position: relative;
+  max-width: 100%;
+  text-decoration: none; /* Loại bỏ gạch dưới */
+  color: inherit; /* Dùng màu chữ của phần tử cha */
+}
 .frame-item {
   width: 1663px;
   position: relative;
@@ -497,6 +503,11 @@
   overflow: hidden;
   object-fit: cover;
   z-index: 2;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.truyenngungon-1-icon:hover{
+  transform: scale(1.1); /* Phóng to ảnh khi hover */
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3); /* Thêm bóng đổ */
 }
 .product-item {
   width: 210px;
@@ -566,6 +577,11 @@
   flex-shrink: 0;
   object-fit: cover;
   z-index: 2;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.basicwords-1-icon:hover{
+  transform: scale(1.1); /* Phóng to ảnh khi hover */
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3); /* Thêm bóng đổ */
 }
 .basic-word,
 .div2 {
@@ -632,6 +648,11 @@
   overflow: hidden;
   object-fit: cover;
   z-index: 2;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.vancauhoivisao-1-icon:hover{
+  transform: scale(1.1); /* Phóng to ảnh khi hover */
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3); /* Thêm bóng đổ */
 }
 .vancauhoivisao-1-wrapper {
   align-self: stretch;
@@ -698,6 +719,11 @@
   overflow: hidden;
   object-fit: cover;
   z-index: 2;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.trai-cay-dai-chien-zombie-tap-icon:hover{
+  transform: scale(1.1); /* Phóng to ảnh khi hover */
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3); /* Thêm bóng đổ */
 }
 .trai-cay-dai-chien-zombie-tap-wrapper {
   align-self: stretch;
