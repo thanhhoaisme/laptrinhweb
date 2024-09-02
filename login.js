@@ -34,7 +34,7 @@ async function login() {
 
         if (userResponse.ok) {
             // You might want to use the response data here, e.g., to store user information
-            window.location.href = '/Homepage/Homepage.html';
+            window.location.href = '/Loginsuccess/Homepagesuccess.html';
             alert("Đăng nhập thành công");
         } else {
             try {
