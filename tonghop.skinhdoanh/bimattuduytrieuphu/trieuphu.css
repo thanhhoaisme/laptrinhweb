@@ -122,9 +122,14 @@
     text-decoration: none;
     position: relative;
     color: inherit;
-    display: inline-block;
+    display: inline-block; /* Hoặc display: block; nếu bạn muốn nó chiếm toàn bộ chiều rộng của container cha */
     min-width: 104px;
-  }
+}
+
+.ng-nhp:hover { 
+    text-decoration: underline; 
+    color: white; 
+}
   .related-product-title {
     display: flex;
     flex-direction: column;
