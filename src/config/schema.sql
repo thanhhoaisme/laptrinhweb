@@ -30,17 +30,18 @@ drop table  datalogincus
 -- Books 
 CREATE TABLE books (
     BookID VARCHAR(255) PRIMARY KEY,
+    scripts VARCHAR(255),
     Title VARCHAR(255) NOT NULL,
     Author VARCHAR(255) NOT NULL,
     Price DECIMAL(10, 2) NOT NULL,
     Stock_Quantity INT NOT NULL,
     Sold_Quantity INT NOT NULL DEFAULT 0,
-    Genre VARCHAR(255)
-   
+    Genre VARCHAR(255),
+    ImagePath VARCHAR(255) 
 );
-
+drop table books
 -- Orders 
-CREATE TABLE orders (
+CREATE TABLE orders 
     OrderID SERIAL PRIMARY KEY,
     CustomerID INT NOT NULL,
     Order_Date DATE NOT NULL,
@@ -68,9 +69,3 @@ select * from	datalogincus
 ALTER TABLE logincredentials DROP CONSTRAINT logincredentials_userid_fkey;
 
 ALTER TABLE customers ALTER COLUMN pass_word SET DEFAULT 'some_default_password';
-
-CREATE TABLE images (
-    ImageID SERIAL PRIMARY KEY,
-    ImageName VARCHAR(255) NOT NULL,
-    ImageData BYTEA NOT NULL -- Lưu trữ dữ liệu ảnh dưới dạng BLOB (Binary Large Object)
-);

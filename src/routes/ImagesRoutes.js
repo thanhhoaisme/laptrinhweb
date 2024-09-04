@@ -1,6 +1,6 @@
 
 const express = require('express');
 const router = express.Router();
-const loginadminController = require('../controller/admin/Images');  
-router.post('/',loginadminController.loginadmin); 
+const ImagesController= require('../controller/admin/ImagesController');  
+router.get('/:bookId',ImagesController.getBookImage);  
 module.exports = router;
