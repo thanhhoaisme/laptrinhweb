@@ -1,172 +1,53 @@
-.avatar-1-icon {
-  height: 65px;
-  width: 74px;
-  position: relative;
-  object-fit: cover;
+/* admin.css */
+
+/* Style cho phần header */
+header {
+  display: flex;
+  align-items: center;
+  background-color: #f4f4f4;
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
 }
-.admin {
+
+header .logo {
+  width: 50px; /* kích thước logo */
+  height: auto;
+  margin-right: 20px;
+}
+
+header nav ul {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+header nav ul li {
+  margin-right: 20px;
+}
+
+header nav ul li a {
   text-decoration: none;
-  position: relative;
-  font-weight: 800;
-  color: inherit;
-  display: inline-block;
-  min-width: 56px;
+  color: #333;
+  font-weight: bold;
 }
-.customer-menu,
-.sidebar-items {
-  display: flex;
-  align-items: flex-start;
+
+header nav ul li a:hover {
+  color: #007bff;
 }
-.sidebar-items {
-  flex-direction: column;
-  justify-content: flex-start;
-  padding: 23px 0 0;
+#logout-button {
+  position: absolute; /* Đặt vị trí tuyệt đối cho nút */
+  top: 10px; /* Khoảng cách từ mép trên của màn hình */
+  right: 10px; /* Khoảng cách từ mép phải của màn hình */
+  padding: 10px 20px; /* Đệm bên trong nút */
+  background-color: #f44336; /* Màu nền đỏ */
+  color: white; /* Màu chữ trắng */
+  border: none; /* Loại bỏ viền mặc định */
+  border-radius: 5px; /* Bo góc nút */
+  cursor: pointer; /* Biểu tượng con trỏ chuột khi di chuột qua nút */
+  transition: background-color 0.3s; /* Hiệu ứng chuyển đổi mượt mà cho màu nền */
 }
-.customer-menu {
-  width: 163px;
-  flex-direction: row;
-  justify-content: space-between;
-  gap: 20px;
-}
-.qun-l-danh {
-  flex: 1;
-  position: relative;
-  font-weight: 500;
-  white-space: pre-wrap;
-}
-.title-wrapper {
-  width: 257px;
-  display: flex;
-  flex-direction: row;
-  align-items: flex-start;
-  justify-content: flex-start;
-  padding: 0 var(--padding-12xs);
-  box-sizing: border-box;
-}
-.qun-l-ha,
-.qun-l-sn {
-  position: relative;
-  font-weight: 500;
-  white-space: pre-wrap;
-}
-.qun-l-sn {
-  width: 238px;
-  display: inline-block;
-}
-.qun-l-ha {
-  flex: 1;
-}
-.navigation {
-  align-self: stretch;
-  display: flex;
-  flex-direction: row;
-  align-items: flex-start;
-  justify-content: flex-start;
-  padding: 0 4px 0 var(--padding-11xs);
-}
-.ti-khon-khch {
-  flex: 1;
-  position: relative;
-  font-weight: 500;
-  white-space: pre-wrap;
-}
-.menu-options {
-  align-self: stretch;
-  display: flex;
-  flex-direction: row;
-  align-items: flex-start;
-  justify-content: flex-start;
-  padding: 0 5px 0 var(--padding-12xs);
-}
-.ti-khon-admin {
-  height: 42px;
-  flex: 1;
-  position: relative;
-  display: inline-block;
-  font-weight: 500;
-  white-space: pre-wrap;
-}
-.account-menu,
-.navbar,
-.sidebar {
-  display: flex;
-  align-items: flex-start;
-  justify-content: flex-start;
-}
-.account-menu {
-  align-self: stretch;
-  flex-direction: row;
-  padding: 0 0 0 var(--padding-11xs);
-}
-.navbar,
-.sidebar {
-  flex-direction: column;
-}
-.navbar {
-  margin-left: -24px;
-  width: 280px;
-  gap: 45px;
-  font-size: var(--font-size-lg);
-  color: var(--color-gray);
-}
-.sidebar {
-  width: 236px;
-  background-color: #125f77;
-  overflow: hidden;
-  flex-shrink: 0;
-  padding: 29px 22px 342px;
-  box-sizing: border-box;
-  gap: 75px;
-}
-.fahasa-logo-1-icon {
-  position: absolute;
-  height: 100%;
-  top: 0;
-  bottom: 0;
-  left: 332px;
-  max-height: 100%;
-  width: 619px;
-  object-fit: cover;
-}
-.logo-container,
-.root {
-  max-width: 100%;
-  overflow: hidden;
-}
-.logo-container {
-  height: 108px;
-  flex: 1;
-  position: sticky;
-  background-color: rgba(246, 0, 0, 0.89);
-  top: 0;
-  z-index: 99;
-}
-.root {
-  width: 1581px;
-  background-color: var(--color-white);
-  display: flex;
-  flex-direction: row;
-  align-items: flex-start;
-  justify-content: flex-start;
-  line-height: normal;
-  letter-spacing: normal;
-  text-align: left;
-  font-size: 16px;
-  color: var(--color-white);
-  font-family: var(--font-inter);
-}
-@media screen and (max-width: 675px) {
-  .sidebar {
-    padding-top: 20px;
-    padding-bottom: 222px;
-    box-sizing: border-box;
-  }
-}
-@media screen and (max-width: 450px) {
-  .navbar {
-    gap: 22px;
-  }
-  .sidebar {
-    gap: 37px;
-  }
+
+#logout-button:hover {
+  background-color: #d32f2f; /* Màu nền đỏ đậm hơn khi di chuột qua */
 }

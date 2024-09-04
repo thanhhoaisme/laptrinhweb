@@ -22,6 +22,11 @@ app.use(express.json());
 app.use('/login', loginRoutes);
 app.use('/loginadmin',loginadminRoutes);
 app.use('/register',RegisterRoutes);
+
+// TODO
+// app.use('/product', productRoutes);
+// getById
+
 // Run Server 
 app.listen(8989, () => {
     console.log('Server backend running on 8989');

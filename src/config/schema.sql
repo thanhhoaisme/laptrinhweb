@@ -8,7 +8,8 @@ CREATE TABLE customers (
 	Pass_Word VARCHAR (255) NOT NULL
 );
 drop table customers
- SELECT dl.Loginvalue, dl.Pass_Word
+
+	SELECT dl.Loginvalue, dl.Pass_Word
 FROM datalogincus dl
 
 -- Admin Logins
@@ -16,6 +17,7 @@ CREATE TABLE dataloginadmin (
     admin_ID VARCHAR (255) PRIMARY KEY,
     Pass_Word VARCHAR (255) NOT NULL 
 );
+drop table dataloginadmin
 
 -- Customer Logins
 CREATE TABLE datalogincus (
@@ -27,18 +29,23 @@ CREATE TABLE datalogincus (
     FOREIGN KEY (CustomerID) REFERENCES customers(CustomerID) 
 );
 drop table  datalogincus 
--- Books 
+select * from customers
+select * from	datalogincus
+
+--books
 CREATE TABLE books (
     BookID VARCHAR(255) PRIMARY KEY,
-    Title VARCHAR(255) NOT NULL,
-    Author VARCHAR(255) NOT NULL,
+    scripts VARCHAR(255),
+    Title TEXT,
     Price DECIMAL(10, 2) NOT NULL,
     Stock_Quantity INT NOT NULL,
     Sold_Quantity INT NOT NULL DEFAULT 0,
-    Genre VARCHAR(255)
-   
+    Genre VARCHAR(255),
+    ImagePath VARCHAR(255) 
 );
-
+drop table books
+ALTER TABLE books
+ALTER COLUMN scripts TYPE VARCHAR (1000);
 -- Orders 
 CREATE TABLE orders (
     OrderID SERIAL PRIMARY KEY,
@@ -50,7 +57,7 @@ CREATE TABLE orders (
     Shipping_Address VARCHAR(255),
     FOREIGN KEY (CustomerID) REFERENCES customers(CustomerID)
 );
-
+drop table orders
 -- Order Items 
 CREATE TABLE order_items (
     OrderItemID SERIAL PRIMARY KEY,
@@ -61,9 +68,8 @@ CREATE TABLE order_items (
     FOREIGN KEY (OrderID) REFERENCES orders(OrderID),
     FOREIGN KEY (BookID) REFERENCES books(BookID)
 );
+drop table order_items
 
-select * from customers
-select * from	datalogincus
 
 ALTER TABLE logincredentials DROP CONSTRAINT logincredentials_userid_fkey;
 
@@ -74,3 +80,8 @@ CREATE TABLE images (
     ImageName VARCHAR(255) NOT NULL,
     ImageData BYTEA NOT NULL -- Lưu trữ dữ liệu ảnh dưới dạng BLOB (Binary Large Object)
 );
+
+select * from books
+SELECT ImagePath FROM books
+
+

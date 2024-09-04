@@ -220,12 +220,13 @@
 }
 .sach-tham-khao-cap3-1-icon {
   align-self: stretch;
-  height: 276px;
+  height: 290px;
   position: relative;
   max-width: 100%;
   overflow: hidden;
   flex-shrink: 0;
   object-fit: cover;
+  object-position: bottom;
   z-index: 2;
 }
 .phuongphapgiaivatlitheochuyend-icon {

@@ -1,0 +1,45 @@
+
+body {
+    background-color: #f4f4f4;
+    font-family: sans-serif;
+}
+
+.navbar {
+    background-color: red;
+    padding: 15px 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+    max-height: 50px; /* Điều chỉnh kích thước logo nếu cần */
+    margin-left: 20px;
+}
+
+.card {
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card-header {
+    background-color: orange; /* Màu xanh dương của Bootstrap */
+    color: #fff;
+    border-radius: 10px 10px 0 0;
+}
+
+.form-group i {
+    position: absolute;
+    left: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #999;
+}
+
+.form-control {
+    padding-left: 40px; /* Tạo khoảng trống cho icon */
+}
+
+.btn-primary {
+    background-color: orange;
+    border: none;
+}

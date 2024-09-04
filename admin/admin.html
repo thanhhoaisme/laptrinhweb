@@ -1,66 +1,26 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="initial-scale=1, width=device-width" />
-
-    <link rel="stylesheet" href="./globaladmin.css" />
-    <link rel="stylesheet" href="./admin.css" />
-    <link rel="stylesheet" href="./admin.js" />
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,800;1,500&display=swap"
-    />
-  </head>
-  <body>
-    <div class="root">
-      <div class="sidebar">
-        <div class="customer-menu">
-          <img
-            class="avatar-1-icon"
-            loading="lazy"
-            alt=""
-            src="..\picture\avatar.jpg"
-          />
-
-          <div class="sidebar-items">
-            <a class="admin">ADMIN</a>
-          </div>
-        </div>
-        <div class="navbar">
-          <div class="title-wrapper">
-            <i class="qun-l-danh">Quản lí danh mục </i>
-            <button id="category-button"></button> 
-          </div>
-          <i class="qun-l-sn">Quản lí sản phẩm </i>
-          <div class="navigation">
-            <i class="qun-l-ha">Quản lí hóa đơn </i>
-          </div>
-          <div class="menu-options">
-            <i class="ti-khon-khch">Tài khoản khách hàng </i>
-          </div>
-          <div class="account-menu">
-            <i class="ti-khon-admin">Tài khoản Admin và NV </i>
-          </div>
-        </div>
-      </div>
-      <header class="logo-container">
-        <img
-          class="fahasa-logo-1-icon"
-          loading="lazy"
-          alt=""
-          src="..\picture\fahasa-logo.webp"
-        />
-      </header>
-    </div>
-    <script>
-      document.addEventListener('DOMContentLoaded', (event) => {
-          const categoryButton = document.getElementById('category-button');
-          categoryButton.addEventListener('click', (event) => {
-              // Chuyển hướng đến trang quản lý danh mục (thay thế 'category-management.html' bằng đường dẫn thực tế)
-              window.location.href = ''; 
-          });
-      });
-      </script>
-  </body>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Page</title>
+    <link rel="stylesheet" href="globaladmin.css">
+    <link rel="stylesheet" href="admin.css">
+</head>
+<body>
+    <header>
+        <img src="../picture/avatar.jpg" alt="Logo" class="logo">
+        <nav>
+            <ul>
+                <li><a href="#">Quản lý danh mục</a></li>
+                <li><a href="#">Quản lý sản phẩm</a></li>
+                <li><a href="#">Quản lý hóa đơn</a></li>
+               
+            </ul>
+        </nav>
+        <button id="logout-button">Đăng xuất</button> 
+    </header>
+    <div id="customer-table"></div> 
+    <script src="1.js"></script>
+</body>
 </html>

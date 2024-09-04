@@ -1,19 +1,18 @@
+/* globaladmin.css */
+
+/* Các kiểu toàn cục có thể áp dụng cho toàn bộ trang admin */
+
 body {
+  font-family: Arial, sans-serif;
   margin: 0;
-  line-height: normal;
+  padding: 0;
 }
 
-:root {
-  /* fonts */
-  --font-inter: Inter;
+a {
+  color: #007bff;
+  text-decoration: none;
+}
 
-  /* font sizes */
-  --font-size-lg: 18px;
-
-  /* Colors */
-  --color-white: #fff;
-  --color-gray: rgba(255, 255, 255, 0.76);
-
-  /* Paddings */
-  --padding-7xs: 6px;
+a:hover {
+  text-decoration: underline;
 }
