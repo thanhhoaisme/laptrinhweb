@@ -1,3 +1,4 @@
+
 INSERT INTO books (BookID, scripts, Title, Price, Stock_Quantity, Genre, ImagePath)
 VALUES 
 ('book001','Câu Hỏi Và Bài Tập Bồi Dưỡng Học Sinh Giỏi Địa Lí 12(Dùng Chung Cho Các Bộ SGK Hiện Hành) giúp các em có được tài liệu tham khảo dùng để rèn luyện và phát triển các năng lực và phẩm chất học sinh giỏi địa lí', 'BÀI TẬP ĐỊA LÍ 12', 80.000 , 50, 'SÁCH THAM KHẢO CẤP 3', 'cau-hoi-va-bai-tap-boi-duong-hoc-sinh-gioi-dia-li-12-dung-chung-cho-cac-bo-sgk-hien-hanh_L.jpg'),
@@ -32,3 +33,5 @@ VALUES
 ('book030', 'Quy Tắc Số 1 - Chiến Lược Đơn Giản Để Đầu Tư Hiệu Quả Chỉ Với 15 Phút Mỗi Tuần phù hợp với những ai mong muốn tìm hiểu về đầu tư chứng khoán một cách đơn giản, có hệ thống và muốn tự mình quản lý tài chính cá nhân.', 'QUY TẮC SỐ 1', 171.000, 50, 'SÁCH KINH DOANH', 'quytac.jpg'),
 ('book031', 'Think & Grow Rich - Nghĩ Giàu & Làm Giàu (Sbooks) - Vật chất quyết định ý thức nhưng đồng thời để có được kết quả thực tế, chúng ta phải tạo ra những năng lượng từ ý nghĩ để thúc đẩy hành vi hoàn thiện vật chất mong muốn.', 'THINK & GROW RICH', 95.000, 50, 'SÁCH KINH DOANH', 'think-grow-rich-nghi-giau-va-lam-giau-bia-mem-1_L.jpg'),
 ('book032', 'Thương Mại Điện Tử mục tiêu của cuốn sách là nhằm cung cấp những kiến thức cơ bản nhất về TMĐT và Internet, các bước tiếp cận TMĐT, cũng như giúp sinh viên bước đầu làm quen với một số thao tác tìm kiếm thông tin, giao dịch, mua sắm và thanh toán trên mạng; không đi sâu vào các giải pháp kỹ thuật như thiết kế trang Web, xây dựng hệ thống bảo mật và thanh toán điện tử …', 'THƯƠNG MẠI ĐIỆN TỬ', 183.000, 50, 'SÁCH KINH DOANH', 'thuongmai.jpg');
+
+

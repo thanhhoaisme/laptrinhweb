@@ -10,6 +10,7 @@ app.use(cors());
 const loginRoutes = require ('./routes/loginRoutes');
 const loginadminRoutes = require('./routes/loginadminRoutes');
 const RegisterRoutes= require('./routes/RegisterRoutes');
+const ImagesRoutes= require('./routes/ImagesRoutes');
 // -- Fix cors issue - this line of code 
 app.use((req, res, next) => {
     res.header("Access-Control-Allow-Origin", "*");
@@ -27,6 +28,7 @@ app.use('/register',RegisterRoutes);
 // app.use('/product', productRoutes);
 // getById
 
+app.use('/Images',ImagesRoutes);
 // Run Server 
 app.listen(8989, () => {
     console.log('Server backend running on 8989');

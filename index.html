@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Hiển thị ảnh sách</title>
+</head>
+<body>
+
+    <h1>Xem ảnh sách</h1>
+
+    <img id="bookImage" src="" alt="Ảnh sách">
+
+    <script>
+        // Hàm getBookImage (đã được cung cấp)
+        function getBookImage(bookId) { 
+            // ... (code JavaScript bạn đã cung cấp)
+        }
+
+        // Ví dụ: Lấy bookId từ URL (bạn cần điều chỉnh cách lấy bookId tùy theo ứng dụng của bạn)
+        const urlParams = new URLSearchParams(window.location.search);
+        const bookId = urlParams.get('bookId');
+
+        if (bookId) {
+            getBookImage(bookId);
+        } else {
+            // Xử lý trường hợp không có bookId trong URL (ví dụ: hiển thị thông báo)
+            const bookImage = document.getElementById('bookImage');
+            bookImage.alt = 'Không tìm thấy bookId trong URL';
+        }
+    </script>
+
+</body>
+</html>
