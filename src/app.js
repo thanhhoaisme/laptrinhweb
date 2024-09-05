@@ -11,6 +11,7 @@ const loginRoutes = require ('./routes/loginRoutes');
 const loginadminRoutes = require('./routes/loginadminRoutes');
 const RegisterRoutes= require('./routes/RegisterRoutes');
 const ImagesRoutes= require('./routes/ImagesRoutes');
+const stockRoutes = require('./routes/stockRoutes'); 
 // -- Fix cors issue - this line of code 
 app.use((req, res, next) => {
     res.header("Access-Control-Allow-Origin", "*");
@@ -23,6 +24,7 @@ app.use(express.json());
 app.use('/login', loginRoutes);
 app.use('/loginadmin',loginadminRoutes);
 app.use('/register',RegisterRoutes);
+app.use('/api', stockRoutes);
 
 // TODO
 // app.use('/product', productRoutes);

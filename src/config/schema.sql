@@ -35,8 +35,8 @@ select * from	datalogincus
 --books
 CREATE TABLE books (
     BookID VARCHAR(255) PRIMARY KEY,
-    Title TEXT,
-    Author VARCHAR(255) NOT NULL,
+    Title VARCHAR(225),
+	Scripts TEXT,
     Price DECIMAL(10, 2) NOT NULL,
     Stock_Quantity INT NOT NULL,
     Sold_Quantity INT NOT NULL DEFAULT 0,
